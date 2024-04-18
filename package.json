@@ -11,7 +11,8 @@
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "psql": "npm config set script-shell \"/bin/bash\" && source .env.development && psql -h $POSTGRES_HOST -d $POSTGRES_DB -U $POSTGRES_USER"
   },
   "author": "",
   "license": "MIT",
